@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		CE5D04A52178B9B7004FCF7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5D04A42178B9B7004FCF7E /* AppDelegate.swift */; };
-		CE5D04A72178B9B7004FCF7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5D04A62178B9B7004FCF7E /* ViewController.swift */; };
+		CE5D04A72178B9B7004FCF7E /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5D04A62178B9B7004FCF7E /* MainVC.swift */; };
 		CE5D04AA2178B9B7004FCF7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5D04A82178B9B7004FCF7E /* Main.storyboard */; };
 		CE5D04AC2178B9BD004FCF7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5D04AB2178B9BD004FCF7E /* Assets.xcassets */; };
 		CE5D04AF2178B9BD004FCF7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5D04AD2178B9BD004FCF7E /* LaunchScreen.storyboard */; };
+		CE5D04B821796591004FCF7E /* hourlywagetxt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5D04B721796591004FCF7E /* hourlywagetxt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE5D04A12178B9B7004FCF7E /* window-shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "window-shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5D04A42178B9B7004FCF7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE5D04A62178B9B7004FCF7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE5D04A62178B9B7004FCF7E /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		CE5D04A92178B9B7004FCF7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE5D04AB2178B9BD004FCF7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE5D04AE2178B9BD004FCF7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE5D04B02178B9BD004FCF7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE5D04B721796591004FCF7E /* hourlywagetxt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hourlywagetxt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		CE5D04A32178B9B7004FCF7E /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				CE5D04B621796529004FCF7E /* View */,
 				CE5D04A42178B9B7004FCF7E /* AppDelegate.swift */,
-				CE5D04A62178B9B7004FCF7E /* ViewController.swift */,
 				CE5D04A82178B9B7004FCF7E /* Main.storyboard */,
+				CE5D04A62178B9B7004FCF7E /* MainVC.swift */,
 				CE5D04AB2178B9BD004FCF7E /* Assets.xcassets */,
 				CE5D04AD2178B9BD004FCF7E /* LaunchScreen.storyboard */,
 				CE5D04B02178B9BD004FCF7E /* Info.plist */,
 			);
 			path = "window-shopper";
+			sourceTree = "<group>";
+		};
+		CE5D04B621796529004FCF7E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE5D04B721796591004FCF7E /* hourlywagetxt.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE5D04A72178B9B7004FCF7E /* ViewController.swift in Sources */,
+				CE5D04B821796591004FCF7E /* hourlywagetxt.swift in Sources */,
+				CE5D04A72178B9B7004FCF7E /* MainVC.swift in Sources */,
 				CE5D04A52178B9B7004FCF7E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
