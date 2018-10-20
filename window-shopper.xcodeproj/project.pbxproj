@@ -56,10 +56,10 @@
 		CE5D04A32178B9B7004FCF7E /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				CE5D04BA217AC95D004FCF7E /* Controller */,
 				CE5D04B621796529004FCF7E /* View */,
 				CE5D04A42178B9B7004FCF7E /* AppDelegate.swift */,
 				CE5D04A82178B9B7004FCF7E /* Main.storyboard */,
-				CE5D04A62178B9B7004FCF7E /* MainVC.swift */,
 				CE5D04AB2178B9BD004FCF7E /* Assets.xcassets */,
 				CE5D04AD2178B9BD004FCF7E /* LaunchScreen.storyboard */,
 				CE5D04B02178B9BD004FCF7E /* Info.plist */,
@@ -73,6 +73,14 @@
 				CE5D04B721796591004FCF7E /* hourlywagetxt.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CE5D04BA217AC95D004FCF7E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE5D04A62178B9B7004FCF7E /* MainVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

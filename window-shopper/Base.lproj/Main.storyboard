@@ -27,8 +27,17 @@
                                     <constraint firstAttribute="height" constant="60" id="anl-eT-vNU"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hourly Wage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7K5-r3-YoN" customClass="hourlywagetxt" customModule="window_shopper" customModuleProvider="target">
-                                <rect key="frame" x="40" y="170" width="295" height="30"/>
+                            <textField opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hourly Wage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7K5-r3-YoN" customClass="hourlywagetxt" customModule="window_shopper" customModuleProvider="target">
+                                <rect key="frame" x="40" y="170" width="295" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2x8-cN-jpp"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HNH-y2-h4g" customClass="hourlywagetxt" customModule="window_shopper" customModuleProvider="target">
+                                <rect key="frame" x="40" y="235" width="295" height="40"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -37,18 +46,26 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="8C3-Zk-7nj" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="3iG-zg-Efy"/>
+                            <constraint firstItem="HNH-y2-h4g" firstAttribute="height" secondItem="7K5-r3-YoN" secondAttribute="height" id="6p7-bd-fh6"/>
                             <constraint firstItem="8C3-Zk-7nj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AEl-e4-UDh"/>
+                            <constraint firstItem="HNH-y2-h4g" firstAttribute="top" secondItem="7K5-r3-YoN" secondAttribute="bottom" constant="25" id="D86-N6-S3T"/>
                             <constraint firstItem="MYh-nD-jka" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Deq-cm-LjI"/>
                             <constraint firstItem="MYh-nD-jka" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="LAg-dt-EuB"/>
+                            <constraint firstItem="HNH-y2-h4g" firstAttribute="leading" secondItem="7K5-r3-YoN" secondAttribute="leading" id="UD6-2C-U50"/>
                             <constraint firstItem="8C3-Zk-7nj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bz8-eH-bbW"/>
                             <constraint firstItem="7K5-r3-YoN" firstAttribute="top" secondItem="MYh-nD-jka" secondAttribute="bottom" constant="55" id="gH4-Pt-4QR"/>
                             <constraint firstItem="8C3-Zk-7nj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gpc-K7-ZYf"/>
                             <constraint firstItem="7K5-r3-YoN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="ixS-vM-rIf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7K5-r3-YoN" secondAttribute="trailing" constant="40" id="izb-Rm-WdJ"/>
+                            <constraint firstItem="HNH-y2-h4g" firstAttribute="trailing" secondItem="7K5-r3-YoN" secondAttribute="trailing" id="nUy-Z2-kd2"/>
                             <constraint firstItem="7K5-r3-YoN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tew-qA-mbE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="priceTxt" destination="HNH-y2-h4g" id="5Eo-is-lQg"/>
+                        <outlet property="wageTxt" destination="7K5-r3-YoN" id="aOd-Z9-teu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
