@@ -13,7 +13,18 @@ import UIKit
 class hourlywagetxt: UITextField {
 
     override func draw(_ rect: CGRect) {
-        <#code#>
+        let size: CGFloat = 20
+        let currencyLbl = UILabel(frame: CGRect(x: 5, y: (frame.size.height / 2) - size / 2 , width: size, height: size))
+        currencyLbl.backgroundColor = #colorLiteral(red: 0.7227355647, green: 0.7227355647, blue: 0.7227355647, alpha: 0.8534353596)
+        currencyLbl.textAlignment = .center
+        currencyLbl.textColor = #colorLiteral(red: 0.1979163265, green: 0.2142883317, blue: 0.2380727885, alpha: 1)
+        currencyLbl.layer.cornerRadius = 15
+        currencyLbl.clipsToBounds = true
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.locale = .current
+        currencyLbl.text = formatter.currencySymbol
+        addSubview(currencyLbl)
     }
     
     override func prepareForInterfaceBuilder() {
