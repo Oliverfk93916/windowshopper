@@ -12,6 +12,10 @@ import UIKit
 
 class hourlywagetxt: UITextField {
 
+    override func draw(_ rect: CGRect) {
+        <#code#>
+    }
+    
     override func prepareForInterfaceBuilder() {
         customizeView()
     }
@@ -26,6 +30,7 @@ class hourlywagetxt: UITextField {
             backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.25)
             layer.cornerRadius = 15
             textAlignment = .center
+            clipsToBounds = true
             
             
             if let p = placeholder {
